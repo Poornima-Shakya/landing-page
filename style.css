@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    margin: 1px;
+    background: #21acd6;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: inset 2px 2px 100px #054e64;
+    margin: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.logo {
+    padding-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-link {
+    list-style: none;
+    display: inline-block;
+    padding-right: 60px;
+}
+
+.nav-link li {
+    display: inline;
+    padding: 10px;
+    margin-left: 0px;
+    border-radius: 50px;
+}
+
+.nav-link li :hover {
+    padding: 3px;
+    border: 2px solid #333;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.nav-link a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+span {
+    color: #333;
+    font-size: 3rem;
+}
+
+
+.main {
+    background-image: url('cover.avif');
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position-x: left;
+    background-size: contain;
+    padding: 20px;
+    height: 100vh;
+    padding-left: 40%;
+    animation:fadeInRight 1s ease-in-out;
+}
+
+.main h1 {
+    animation: leZoomIn 1s ease-in-out;
+    margin-top: 30%;
+    font-size: 40px;
+}
+
+.main p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.button {
+    background: rgb(24, 89, 132);
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 12%;
+}
+
+.button:hover {
+    background-color: #333;
+    color: white;
+    box-shadow: 2px 2px 10px black;
+    transition: 0.3s;
+}
+
+.about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 1.2rem;
+    
+}
+.about p{
+    
+    text-shadow:1px 1px 10px #bacbd0;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.language-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #d2dde0;
+}
+
+.language {
+    display: inline;
+    background: #f4f4f4;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.language:hover {
+    border: 2px solid rgb(209, 209, 209);
+    box-shadow: 2px 2px 10px rgb(112, 111, 111);
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+.language h2 {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.language-graph {
+    margin-top: 20px;
+    display: inline;
+}
+.language button{
+    margin-top: 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.language button :hover{
+    background-color: #333;
+    color: #fff;
+}
+.language button a {
+    text-decoration: none;
+}
+.images {
+    display: flex;
+    display: inline;
+    margin: 40px;
+
+}
+
+img {
+    border-radius: 100%;
+    margin: 10px;
+
+}
+
+img:hover {
+    box-shadow: 1px 1px 20px rgb(185, 185, 185);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.feedback-container {
+    margin-top: 10px;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #c7e5ee;
+}
+
+.feedback {
+    
+
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    height: inherit;
+}
+
+.feedback:hover {
+    border: 2px solid rgb(254, 254, 254);
+    box-shadow: 2px 2px 10px rgb(134, 134, 134);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.feedback p {
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    width: 70%;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 2px solid #807c7c;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gainsboro;
+}
+
+form button {
+    background: #00779c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black ;
+}
+
+form button:hover {
+    background: #0e4252;
+    box-shadow: 1px 1px 10px black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-bottom: 3px;
+}
+
+footer li {
+    list-style: none;
+    align-items: left;
+
+}
+
+footer li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #4CAF50;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .language-container {
+        flex-direction: column;
+    }
+}
+
+.container-s{
+    text-align: center;
+    margin-bottom: 6%;
+    
+}
+.container-s h1{
+    margin-top: 6%;
+}
+.form-s{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    /* background-color:#c7e5ee; */
+    display:flow-root;
+    /* box-shadow: 1px 1px 10px gray; */
+    border-radius: 20px;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin: 3px;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.08);
+}
+
+.service-card h2 {
+    margin-top: 0;
+}
+
+.learn-more {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.learn-more:hover {
+    background: #0056b3;
+    box-shadow: 1px 1px 10px gray;
+}
+.icon{
+    justify-items: left;
+}
+.un-list :hover{
+    text-decoration: underline;
+    font-size: large;
+   
+}
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
